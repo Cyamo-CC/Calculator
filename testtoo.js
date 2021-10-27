@@ -54,12 +54,21 @@ function lisääPäivä(){
  var loppu = document.getElementById('loppu');
  var alkuA = alku.value;
 var loppuA =loppu.value;
-alert(alkuA);
-alert(loppuA);
- 
-var tunnit = Math.abs(loppuA-alkuA);
 
-alert (tunnit);
+var AA =new Date();
+var LA = new Date();
+
+AA.setTime(alkuA);
+LA.setTime(loppuA);
+
+
+var seconds= (LA.getTime()-AA.getTime());
+console.log(alkuA);
+console.log(loppuA);
+ 
+console.log(AA);
+console.log(LA);
+console.log(seconds);
 
 }
 

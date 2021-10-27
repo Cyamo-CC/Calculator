@@ -4,12 +4,12 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Palkka Laskin</title>
+    <title>Test Grounds</title>
     <link href="style.css" rel="stylesheet"/>
-    
 </head>
 <body>
-   <!--  <h1>Palkka laskin</h1>
+    
+    <h1>Palkka laskin</h1>
     <p>Tällä sovelluksella lasket kätevästi kuukausi palkkasi!</p>
 
     <form>
@@ -55,71 +55,47 @@
             </div>
         </div> 
         </fieldset>
-    </form> -->
-            <h3>Päivät joina työskentelit palkkajakson aikana</h3>
-         <!--   <div class="container">
-                <div class="calendar">
-                    <div class="month">
-                            <div class="prev">&#10094;</div> 
-                            <div class="date">
-                                <h2></h2>
-                                <p></p>
-                                <h3>2021</h3>
-                            </div>
-                            <div class="next">&#10095;</div>
-                    </div>
+    </form> 
 
-                    <div class="weekdays">
-                        <div>Ma</div>
-                        <div>Ti</div>
-                        <div>Ke</div>
-                        <div>To</div>
-                        <div>Pe</div>
-                        <div>La</div>
-                        <div>Su</div> 
-                    </div>
-                    <div class="days"></div>
-                    </div>
-                    </div>
-                </div>
-            </div> -->
-    
-            <form>
-                <fieldset>
-                    <legend>Päivien Tiedot:</legend>
-                        <p class="inline">Valitse viikonpäivä:</p>
-                        <span><input type="radio" class="päiväValinta" name="päiväValinta" value="Arkipäivä"/>Arkipäivä</span>
-                        <span><input type="radio" class="päiväValinta"name="päiväValinta" value="Lauantai"/>Launatai</span>
-                        <span><input type="radio"class="päiväValinta" name="päiväValinta"  value="Sunnuntai"/>Sunnuntai</span>
-                            <!-- <p>Syötä alku ja loppumis aika:</p>
-                            <span><input id="alku"  type="time"/></span> - <span><input id="loppu" type="time"/></span> -->
-                          <br>
-                          <br>
-                            <label for="TehdytH">Montako tuntia työskentelit?</label><br>
-                            <input type="number" id="Tunnit" placeholder="0"><br>
-                        <br><br> 
+
+    <fieldset>
+        <legend>Päivien Tiedot:</legend>
+            <p class="inline">Valitse viikonpäivä:</p>
+            <span><input type="radio" class="päiväValinta" name="päiväValinta" value="Arkipäivä"/>Arkipäivä</span>
+            <span><input type="radio" class="päiväValinta"name="päiväValinta" value="Lauantai"/>Launatai</span>
+            <span><input type="radio"class="päiväValinta" name="päiväValinta"  value="Sunnuntai"/>Sunnuntai</span>
+                <!-- <p>Syötä alku ja loppumis aika:</p>
+                <span><input id="alku"  type="time"/></span> - <span><input id="loppu" type="time"/></span> -->
+
+
+              <br>
+              <br>
+                <label for="TehdytH">Montako tuntia työskentelit?</label><br>
+                <input type="number" id="Tunnit" placeholder="0"><br>
+            <br><br> 
+
         
-                    
-                    <button id="Lisää" >Lisää Päivä</button>
+        <button id="Lisää" >Lisää Päivä</button>
 
-                </fieldset>
-            </form>
-        <!-- <button id="laskeP">Laske!</button> -->
-            <br>
-            <br>
+    </fieldset>
 
-            <table id="työListaus"  border="1">
-                <tr>
-                <th>Työpäivä Nro.</th>
-                <th>Työpäivän status.</th>
-                <th>Tehdyt tunnit.</th>
-                </tr>
-            <tr>
-                <td> jotain</td>
-                <td> jotain</td>
-                <td> jotain</td>
-            </tr>
-          </table>
-<script src="Script2.js"></script>
+    <div class= "container">
+    <button id="laskeP">Laske!</button>
+
+    <div class="outputField">
+        <h3 id="yhteensä"></h3>
+      </div>
+    </div>
+
+    <table id="työListaus"  border="1">
+        <tr>
+        <th>Työpäivä Nro.</th>
+        <th>Työpäivän status.</th>
+        <th>Tehdyt tunnit.</th>
+        </tr>
+
+  </table>
+
+    <script src="This.js"></script>
 </body>
 </html>

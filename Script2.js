@@ -11,6 +11,7 @@ function lisääPäivä(){
  var Nro = document.getElementById('työListaus').rows.length-1;
    cell1.innerHTML= Nro; 
 
+   console.log(Nro);
 
   var päivä = document.getElementsByClassName('päiväValinta');
   
@@ -30,6 +31,7 @@ function lisääPäivä(){
     
       cell2.innerHTML= val3;
     } 
+
     var Hs =document.getElementById('Tunnit');
    var TehdytH =Hs.value;
    cell3.innerHTML=TehdytH;
