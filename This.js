@@ -107,5 +107,12 @@ function laske(){
    console.log(Ppalkka);
    document.getElementById('yhteensä').innerHTML=Ppalkka.toString()+"€";
    document.getElementById('hpalkka').style.borderColor ='';
+
+   
+   localStorage.setItem("Tallenna", Ppalkka.toString());
+   document.getElementById('demo').innerHTML = localStorage.getItem("Tallenna");
    }
 }
+
+
+
