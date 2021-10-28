@@ -46,6 +46,7 @@ function näytäS(){
 document.getElementById('Lisää').addEventListener("click",lisääPäivä);
 
 
+
 function lisääPäivä(){
     var table =document.getElementById('työListaus');
    var row = table.insertRow();
@@ -86,6 +87,18 @@ function lisääPäivä(){
 document.getElementById('laskeP').addEventListener('click',laske);
 
 function laske(){
+  var tarkastaja = document.getElementById('hpalkka').value;
+  
+  if (tarkastaja == ""){
+     alert("Ole hyvä ja täytä tiedot");
+     document.getElementById('hpalkka').style.borderColor = "red";
+   }
+  else if (tarkastaja <= 6){
+      alert("Et saa edes lakisääteistä minimi palkkaa");
+      document.getElementById('hpalkka').style.borderBlockColor="red";
+   }
+   else{
+
    var Thinta = document.getElementById('hpalkka').value;
    var Hs = document.getElementById('Tunnit').value;
    var Ppalkka = Thinta*Hs;
@@ -93,4 +106,6 @@ function laske(){
    console.log(Hs);
    console.log(Ppalkka);
    document.getElementById('yhteensä').innerHTML=Ppalkka.toString()+"€";
+   document.getElementById('hpalkka').style.borderColor ='';
+   }
 }
